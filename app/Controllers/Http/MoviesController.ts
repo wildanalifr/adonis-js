@@ -10,7 +10,7 @@ export default class MoviesController {
         data: payload,
       })
     } catch (error) {
-      response.badRequest(error)
+      throw error
     }
   }
 
@@ -27,7 +27,7 @@ export default class MoviesController {
         message: 'Berhasil insert data',
       })
     } catch (error) {
-      response.badRequest(error)
+      throw error
     }
   }
 
@@ -42,7 +42,7 @@ export default class MoviesController {
         data: payload,
       })
     } catch (error) {
-      response.badRequest(error)
+      throw error
     }
   }
 
@@ -67,7 +67,7 @@ export default class MoviesController {
         data: selectedUpdate,
       })
     } catch (error) {
-      response.badRequest(error)
+      throw error
     }
   }
 
@@ -79,7 +79,7 @@ export default class MoviesController {
         message: 'Berhasil delete data',
       })
     } catch (error) {
-      response.badRequest(error)
+      throw error
     }
   }
 }
